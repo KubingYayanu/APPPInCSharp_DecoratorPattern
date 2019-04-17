@@ -1,0 +1,6 @@
+.vs/
+APPPInCSharp_DecoratorPattern.Console/bin/
+APPPInCSharp_DecoratorPattern.Console/obj/
+APPPInCSharp_DecoratorPattern.UnitTests/bin/
+APPPInCSharp_DecoratorPattern.UnitTests/obj/
+packages/
