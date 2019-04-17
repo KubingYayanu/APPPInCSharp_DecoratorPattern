@@ -22,5 +22,9 @@
             itsModem.SpeakerVolume = 10;
             itsModem.Dial(pno);
         }
+
+        public void Hangup()
+        {
+        }
     }
 }

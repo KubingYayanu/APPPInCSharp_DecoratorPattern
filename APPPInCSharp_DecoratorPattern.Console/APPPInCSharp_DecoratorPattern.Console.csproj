@@ -43,9 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ExitHangupModem.cs" />
     <Compile Include="HayesModem.cs" />
     <Compile Include="LoudDialModem.cs" />
+    <Compile Include="LoudDialModemV2.cs" />
     <Compile Include="Modem.cs" />
+    <Compile Include="ModemDecorator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

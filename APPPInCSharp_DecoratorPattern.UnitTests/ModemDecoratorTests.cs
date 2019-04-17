@@ -31,5 +31,18 @@ namespace APPPInCSharp_DecoratorPattern.UnitTests
             Assert.AreEqual("5551212", d.PhoneNumber);
             Assert.AreEqual(10, d.SpeakerVolume);
         }
+
+        [Test]
+        public void LoudDialModemV2()
+        {
+            Modem m = new HayesModem();
+            Modem d = new LoudDialModemV2(m);
+            Assert.AreEqual(null, d.PhoneNumber);
+            Assert.AreEqual(0, d.SpeakerVolume);
+
+            d.Dial("5551212");
+            Assert.AreEqual("5551212", d.PhoneNumber);
+            Assert.AreEqual(10, d.SpeakerVolume);
+        }
     }
 }

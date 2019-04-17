@@ -17,5 +17,9 @@
         {
             phoneNumber = pno;
         }
+
+        public void Hangup()
+        {
+        }
     }
 }
