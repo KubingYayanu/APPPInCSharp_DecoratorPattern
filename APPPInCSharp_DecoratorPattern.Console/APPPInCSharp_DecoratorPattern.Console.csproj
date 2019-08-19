@@ -43,18 +43,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ExitHangupModem.cs" />
-    <Compile Include="HayesModem.cs" />
-    <Compile Include="LoudDialModem.cs" />
-    <Compile Include="LoudDialModemV2.cs" />
-    <Compile Include="Modem.cs" />
-    <Compile Include="ModemDecorator.cs" />
+    <Compile Include="Modem\ExitHangupModem.cs" />
+    <Compile Include="Modem\HayesModem.cs" />
+    <Compile Include="Modem\LoudDialModem.cs" />
+    <Compile Include="Modem\LoudDialModemV2.cs" />
+    <Compile Include="Modem\Interface\Modem.cs" />
+    <Compile Include="Modem\ModemDecorator.cs" />
+    <Compile Include="ProductDao\AuthrizeProductDao.cs" />
+    <Compile Include="ProductDao\Entity\Product.cs" />
+    <Compile Include="ProductDao\Factory.cs" />
+    <Compile Include="ProductDao\Interface\ILog.cs" />
+    <Compile Include="ProductDao\Interface\IProductAuthorizationService.cs" />
+    <Compile Include="ProductDao\Interface\IProductDao.cs" />
+    <Compile Include="ProductDao\Logger.cs" />
+    <Compile Include="ProductDao\LogProductDao.cs" />
+    <Compile Include="ProductDao\ProductAuthorizationService.cs" />
+    <Compile Include="ProductDao\ProductDao.cs" />
+    <Compile Include="ProductDao\ProductService.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
